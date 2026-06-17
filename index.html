@@ -1,456 +1,406 @@
-<!DOCTYPE html><html class="light" lang="fr-CA" style=""><head>
+<!DOCTYPE html><html class="dark" lang="fr-CA" style=""><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>La Chèvre du Net | Soutien Informatique Local</title>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Hanken+Grotesk:wght@400;500&amp;display=swap" rel="stylesheet">
-<!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "tertiary-fixed": "#e1e3e4",
-                        "on-primary-fixed": "#001c3a",
-                        "secondary-fixed": "#6bfe9c",
-                        "on-surface": "#111c2c",
-                        "surface-dim": "#cfdaf1",
-                        "primary": "#000613",
-                        "on-tertiary-container": "#848688",
-                        "secondary": "#006d37",
-                        "on-secondary-container": "#00743a",
-                        "inverse-on-surface": "#ebf1ff",
-                        "surface-white": "#FFFFFF",
-                        "on-tertiary-fixed": "#191c1d",
-                        "tertiary-container": "#1c1f20",
-                        "outline": "#74777f",
-                        "on-tertiary-fixed-variant": "#454748",
-                        "on-primary": "#ffffff",
-                        "on-secondary-fixed-variant": "#005228",
-                        "inverse-primary": "#afc8f0",
-                        "tertiary-fixed-dim": "#c5c7c8",
-                        "surface-bright": "#f9f9ff",
-                        "primary-container": "#001f3f",
-                        "on-secondary-fixed": "#00210c",
-                        "secondary-fixed-dim": "#4ae183",
-                        "surface": "#f9f9ff",
-                        "surface-container-lowest": "#ffffff",
-                        "surface-container-high": "#dee8ff",
-                        "surface-variant": "#d8e3fa",
-                        "surface-tint": "#476083",
-                        "cool-gray": "#EDF2F7",
-                        "primary-fixed": "#d4e3ff",
-                        "deep-navy": "#001F3F",
-                        "primary-fixed-dim": "#afc8f0",
-                        "on-primary-fixed-variant": "#2f486a",
-                        "on-primary-container": "#6f88ad",
-                        "error": "#ba1a1a",
-                        "inverse-surface": "#263142",
-                        "background": "#f9f9ff",
-                        "on-tertiary": "#ffffff",
-                        "surface-container-low": "#f0f3ff",
-                        "error-container": "#ffdad6",
-                        "tech-green": "#2ECC71",
-                        "on-secondary": "#ffffff",
-                        "outline-variant": "#c4c6cf",
-                        "on-error": "#ffffff",
-                        "secondary-container": "#6bfe9c",
-                        "surface-container-highest": "#d8e3fa",
-                        "on-error-container": "#93000a",
-                        "on-background": "#111c2c",
-                        "on-surface-variant": "#43474e",
-                        "tertiary": "#040607",
-                        "surface-container": "#e7eeff"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "spacing": {
-                        "stack-lg": "32px",
-                        "section-padding": "80px",
-                        "gutter": "24px",
-                        "stack-sm": "8px",
-                        "container-max": "1200px",
-                        "base": "8px",
-                        "margin-mobile": "16px",
-                        "stack-md": "16px"
-                    },
-                    "fontFamily": {
-                        "headline-xl": ["Montserrat"],
-                        "headline-md": ["Montserrat"],
-                        "headline-lg": ["Montserrat"],
-                        "body-lg": ["Hanken Grotesk"],
-                        "headline-lg-mobile": ["Montserrat"],
-                        "body-md": ["Hanken Grotesk"],
-                        "label-md": ["Montserrat"],
-                        "headline-xl-mobile": ["Montserrat"]
-                    },
-                    "fontSize": {
-                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                        "headline-xl-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}]
-                    }
-                },
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#454747",
+                    "surface-container-highest": "#353534",
+                    "surface-bright": "#3a3939",
+                    "surface-dim": "#131313",
+                    "secondary": "#c8c6c5",
+                    "surface-container-low": "#1c1b1b",
+                    "on-tertiary": "#303030",
+                    "on-secondary": "#303030",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "outline-variant": "#444748",
+                    "on-surface": "#e5e2e1",
+                    "on-secondary-fixed-variant": "#474746",
+                    "surface-container-lowest": "#0e0e0e",
+                    "outline": "#8e9192",
+                    "primary-fixed-dim": "#c6c6c7",
+                    "inverse-primary": "#5d5f5f",
+                    "tertiary-container": "#e4e2e1",
+                    "surface-variant": "#353534",
+                    "primary": "#ffffff",
+                    "inverse-on-surface": "#313030",
+                    "on-primary-container": "#636565",
+                    "error": "#ffb4ab",
+                    "on-error-container": "#ffdad6",
+                    "surface": "#131313",
+                    "secondary-fixed": "#e4e2e1",
+                    "inverse-surface": "#e5e2e1",
+                    "on-tertiary-container": "#656464",
+                    "background": "#131313",
+                    "tertiary": "#ffffff",
+                    "on-primary": "#2f3131",
+                    "tertiary-fixed-dim": "#c8c6c6",
+                    "tertiary-fixed": "#e4e2e1",
+                    "error-container": "#93000a",
+                    "secondary-container": "#474746",
+                    "on-error": "#690005",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "on-surface-variant": "#c4c7c8",
+                    "on-primary-fixed": "#1a1c1c",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "surface-tint": "#c6c6c7",
+                    "surface-container-high": "#2a2a2a",
+                    "on-secondary-container": "#b7b5b4",
+                    "primary-container": "#e2e2e2",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "surface-container": "#201f1f",
+                    "primary-fixed": "#e2e2e2",
+                    "on-background": "#e5e2e1"
             },
-        }
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "max-width": "1280px",
+                    "marge-mobile": "1rem",
+                    "marge-bureau": "2rem",
+                    "unite-base": "4px",
+                    "gouttiere": "1.5rem"
+            },
+            "fontFamily": {
+                    "titre-h2": ["Montserrat"],
+                    "etiquette-mono": ["JetBrains Mono"],
+                    "titre-h1-mobile": ["Montserrat"],
+                    "titre-h1": ["Montserrat"],
+                    "titre-h3": ["Montserrat"],
+                    "corps-md": ["Inter"],
+                    "corps-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "titre-h2": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "etiquette-mono": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "titre-h1-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "titre-h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "titre-h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "corps-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "corps-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
     </script>
 <style>
         .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            display: inline-block;
-            line-height: 1;
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
         }
-        .nav-link-active {
-            border-bottom: 2px solid #4ae183;
-            padding-bottom: 4px;
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            overflow-x: hidden;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .watermark-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 600px;
+            opacity: 0.05;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .service-card {
+            background: #1A1A1A;
+            border: 1px solid #262626;
+            transition: border-color 0.3s ease;
         }
         .service-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0px 4px 20px rgba(0, 31, 63, 0.05);
-            border-color: #001F3F;
+            border-color: #404040;
         }
-        .animate-subtle-glow {
-            animation: glow 4s ease-in-out infinite alternate;
+        .input-precision {
+            background: #1A1A1A;
+            border: 1px solid #404040;
+            color: #F9F9F9;
         }
-        @keyframes glow {
-            from { text-shadow: 0 0 5px rgba(46, 204, 113, 0); }
-            to { text-shadow: 0 0 15px rgba(46, 204, 113, 0.4); }
+        .input-precision:focus {
+            outline: none;
+            border-color: #F9F9F9;
         }
     </style>
 </head>
-<body class="bg-surface-white font-body-md text-on-surface selection:bg-secondary-container selection:text-on-secondary-fixed">
-<!-- Navigation -->
-<header class="fixed top-0 left-0 w-full z-50 bg-surface-white/95 backdrop-blur-sm border-b border-outline-variant">
-<div class="max-w-container-max mx-auto px-gutter py-4 flex justify-between items-center">
-<a class="flex items-center gap-3 group" href="#">
-
-<span class="font-headline-md text-headline-md font-bold text-primary hidden sm:block">La Chèvre du Net</span>
-</a>
-<nav class="hidden md:flex gap-8 items-center">
-<a class="font-label-md text-label-md text-primary border-b-2 border-secondary-fixed-dim pb-1" href="#services">Services</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#pourquoi">Pourquoi nous</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#propos">À propos</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
+<body class="font-corps-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-surface h-20 border-b border-outline-variant">
+<div class="flex justify-between items-center w-full px-marge-mobile md:px-marge-bureau max-w-max-width mx-auto h-full">
+<div class="flex items-center gap-4">
+<img alt="La Chèvre du Net Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ933iYsLnORIpM2IZbJQ1_dLvapLKtJYwtADISbbRgQIfTBNr5wCAOUHdBxh-2qeG77zlp0H8Fc2DvhjREF2Bod0VUbD6fYkkAc-bytMjPoHWx4pqNUc052sBT1QR_f6cr3M6U4YoFGALrrLQP4ip-mNxLZWJ7vZ9kQFyp9QnsudjYwP0IbYOHx9_LmVOm6ewXnmQ9Nz7oohUkpg801Q-ng24O72T9YUHccuy8hhS6xJxSrFFtLgunFalu5eofJeOpkrmrt31v00d" style="filter: brightness(0) invert(1);">
+<span class="font-titre-h2 text-titre-h3 font-bold text-primary tracking-tight md:block hidden">La Chèvre du Net</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-corps-md text-corps-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#services">Services</a>
+<a class="font-corps-md text-corps-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#propos">À Propos</a>
+<a class="font-corps-md text-corps-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#contact">Contact</a>
+<a class="ml-4 px-6 py-2.5 bg-primary text-background font-titre-h3 text-[14px] font-bold hover:opacity-90 active:scale-95 transition-all" href="#contact">Prendre RDV</a>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
 </nav>
-<a class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded hover:bg-primary-container transition-all active:scale-95" href="#contact">
-            Demander du soutien
-        </a>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden px-marge-mobile md:px-marge-bureau">
+<img alt="Logo filigrane" class="watermark-bg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHO-pCqsecExu1Ah_x-1AxfAkXbD_W0eh-LuaS8Xl6NZLhx_o5BpzYovbTNSL893fTV0wiihcKhGBQo7KPn-twk0KcEwvgYIw9ByFrg8eL72nVm8pA-Mz0gqTPjHrO7TQndoqJd-kNyIh_g_wN432U-XlM4x1SViq2uk29ZC6QFdvtArYHDyh8Fr8mf-0PutuB-f5j1jWppInZoEVIGhpUkgFRwgkeI9lJEE4L8uLxVMrmBzLHgzTf5czZyiU_RWu-uSKXURFEVvQA" style="filter: brightness(0) invert(1); opacity: 0.08; width: 50%; max-width: 600px; right: 0px; top: 10%; transform: none; left: auto;">
+<div class="max-w-max-width mx-auto w-full relative z-10 py-24 text-center md:text-left">
+<div class="max-w-4xl">
+<span class="font-etiquette-mono text-etiquette-mono text-primary border border-outline-variant px-3 py-1 mb-8 inline-block uppercase tracking-widest">Atelier Technique Spécialisé</span>
+<h1 class="font-titre-h1-mobile md:font-titre-h1 md:text-titre-h1 text-primary mb-8 uppercase">SOUTIEN TECHNIQUE LOCAL À DOMICILE ET EN ATELIER</h1>
+<p class="font-corps-lg text-corps-lg text-on-surface-variant mb-12 max-w-2xl">
+                    Nous remettons votre matériel sur pied avec précision et clarté. Profitez d'une expertise humaine pour vos besoins en informatique, réseaux et récupération de données, sans le jargon complexe.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+<a class="px-10 py-5 bg-primary text-background font-titre-h2 text-corps-md font-bold uppercase tracking-wide hover:bg-secondary transition-colors text-center" href="#contact">Demander une visite</a>
+<a class="px-10 py-5 border border-outline-variant text-primary font-titre-h2 text-corps-md font-bold uppercase tracking-wide hover:border-primary transition-colors text-center" href="#services">Nos services</a>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
+<span class="material-symbols-outlined text-4xl">keyboard_double_arrow_down</span>
 </div>
 </header>
-<!-- Hero Section -->
-<section class="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
-<div class="absolute inset-0 z-0 transition-all duration-700 opacity-100 translate-y-0">
-<div class="absolute inset-0 bg-gradient-to-r from-surface-white via-surface-white/80 to-transparent z-10"></div>
-<img alt="Station de travail professionnelle" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaMSFVevBfUgBwzMm-Ql4B3Y4lrDN-qYQWKBckDryIYUh4n14TzcGumz9F_aGNbtvFJNcqTGWDXNedhIWfozKj8h8zqPhFiMcDP4N5ccbIYYUyTJea6Yl0YaGtIKEJ1Q7NXZi939GiMzxSS5kSxmL0awudEMOV16fhIeudb0AOrCy7jxMgsE_eu_sV0tbrvaFI-Ge4sxqT94CTqn_vcY-hjawzfN0MqbwnUa8hjx6-k2L4wmmW5tHVHsZa8RHHC74UmfiFry2c7X8E">
+<!-- Services Section -->
+<section class="py-24 bg-surface-container-lowest px-marge-mobile md:px-marge-bureau" id="services">
+<div class="max-w-max-width mx-auto">
+<div class="mb-20">
+<h2 class="font-titre-h2 text-titre-h2 text-primary mb-4 uppercase">Nos Expertises</h2>
+<div class="w-20 h-1 bg-primary"></div>
 </div>
-<div class="container mx-auto px-gutter relative z-20 max-w-container-max transition-all duration-700 opacity-100 translate-y-0">
-<div class="max-w-2xl">
-<div class="mb-8">
-<img alt="La Chèvre du Net Logo" class="h-24 w-auto mb-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX4DL-2eJ4BLFhCoSpWieds9w1-AruUk46kOG_REPF2IKN6mBwrvEY96KdcJBD_9Fk3vb-hkGxrgwlwRww_bG6nsjiIjZ_Ju4ILb8y4pkmEgXjHGyFd3kEdWvG71hHY1h-XdD_ZMBCn34zdfKVCxR_Yi_5ddEQsiOq12Q1oWhyNOf7GIyjVuvRzxectWPmrK_MvpXCtpBCC5iDTIXWMJ_VnRrrXpuuRdd0zAZKrKvkYodlsMGLIDVECH7x2V1KPN7ZE5E4qV72mSIdNsw">
-<h1 class="font-headline-xl text-headline-xl text-primary mb-6 leading-tight">
-                    Soutien informatique local, <span class="text-secondary">professionnel</span> et humain.
-                </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
-                    Résolvez vos problèmes technologiques rapidement avec un expert de confiance à votre domicile. Je simplifie la technologie pour vous permettre de rester connecté en toute sérénité.
-                </p>
-<div class="flex flex-wrap gap-4">
-<a class="bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded hover:bg-primary-container transition-all shadow-lg flex items-center gap-2" href="#contact">
-                        Demander de l'aide
-                        <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
-</a>
-<a class="border-2 border-primary text-primary font-label-md text-label-md px-8 py-4 rounded hover:bg-surface-container-low transition-all" href="#services">
-                        Mes services
-                    </a>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gouttiere">
+<!-- Service à Domicile -->
+<div class="service-card p-10 flex flex-col justify-between">
+<div>
+<div class="mb-8 text-primary opacity-60">
+<span class="material-symbols-outlined text-6xl" style="font-variation-settings: 'wght' 200;">home_repair_service</span>
+</div>
+<h3 class="font-titre-h3 text-titre-h3 text-primary mb-6 uppercase tracking-tight">SERVICE À DOMICILE</h3>
+<p class="text-on-surface-variant font-corps-md mb-8">Nous nous déplaçons pour configurer votre environnement numérique là où il est utilisé.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 border-b border-surface-container-high pb-4">
+<span class="material-symbols-outlined text-primary text-xl">wifi_tethering</span>
+<span class="font-corps-md">Optimisation Wi-Fi &amp; Réseautique</span>
+</li>
+<li class="flex items-center gap-4 border-b border-surface-container-high pb-4">
+<span class="material-symbols-outlined text-primary text-xl">settings_input_component</span>
+<span class="font-corps-md">Installation de périphériques &amp; Domotique</span>
+</li>
+<li class="flex items-center gap-4 border-b border-surface-container-high pb-4">
+<span class="material-symbols-outlined text-primary text-xl">security</span>
+<span class="font-corps-md">Configuration de sécurité à domicile</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Réparation en Atelier -->
+<div class="service-card p-10 flex flex-col justify-between">
+<div>
+<div class="mb-8 text-primary opacity-60">
+<span class="material-symbols-outlined text-6xl" style="font-variation-settings: 'wght' 200;">precision_manufacturing</span>
+</div>
+<h3 class="font-titre-h3 text-titre-h3 text-primary mb-6 uppercase tracking-tight">RÉPARATION EN ATELIER</h3>
+<p class="text-on-surface-variant font-corps-md mb-8">Un diagnostic méticuleux et des réparations durables pour vos appareils informatiques.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 border-b border-surface-container-high pb-4">
+<span class="material-symbols-outlined text-primary text-xl">laptop_mac</span>
+<span class="font-corps-md">Réparation PC &amp; Laptops (Hardware/Software)</span>
+</li>
+<li class="flex items-center gap-4 border-b border-surface-container-high pb-4">
+<span class="material-symbols-outlined text-primary text-xl">database</span>
+<span class="font-corps-md">Récupération de données perdues</span>
+</li>
+<li class="flex items-center gap-4 border-b border-surface-container-high pb-4">
+<span class="material-symbols-outlined text-primary text-xl">cleaning_services</span>
+<span class="font-corps-md">Nettoyage complet &amp; suppression de virus</span>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Services Grid -->
-<section class="py-section-padding bg-surface-white" id="services">
-<div class="container mx-auto px-gutter max-w-container-max transition-all duration-700 opacity-100 translate-y-0">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
-<div class="max-w-2xl">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-4 transition-all duration-700 opacity-100 translate-y-0">Expertise Technique Complète</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                    Des solutions sur mesure pour tous vos besoins technologiques résidentiels. Précision technique et approche humaine garanties par un professionnel local.
-                </p>
+<!-- Pourquoi nous choisir -->
+<section class="py-24 px-marge-mobile md:px-marge-bureau bg-surface">
+<div class="max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gouttiere">
+<div class="p-6 border-l-2 border-outline-variant">
+<div class="font-etiquette-mono text-primary mb-4">01</div>
+<h4 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase">Service Local</h4>
+<p class="text-on-surface-variant text-corps-md">Proche de vous à Montréal et sur la Rive-Sud.</p>
 </div>
-<div class="hidden md:block h-1 w-24 bg-tech-green rounded-full"></div>
+<div class="p-6 border-l-2 border-outline-variant">
+<div class="font-etiquette-mono text-primary mb-4">02</div>
+<h4 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase">Réponse Rapide</h4>
+<p class="text-on-surface-variant text-corps-md">Intervention efficace pour minimiser vos temps d'arrêt.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Card 1 -->
-<div class="service-card border border-cool-gray p-8 rounded transition-all duration-300 flex flex-col h-full bg-white duration-700 opacity-100 translate-y-0">
-<div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded mb-6 text-primary">
-<span class="material-symbols-outlined text-[28px]">computer</span>
+<div class="p-6 border-l-2 border-outline-variant">
+<div class="font-etiquette-mono text-primary mb-4">03</div>
+<h4 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase">Simplicité</h4>
+<p class="text-on-surface-variant text-corps-md">Des explications claires, sans langage technique complexe.</p>
 </div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Réparation d'ordinateurs</h3>
-<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Diagnostic approfondi et remplacement de composants défectueux pour redonner vie à vos appareils.</p>
-</div>
-<!-- Card 2 -->
-<div class="service-card border border-cool-gray p-8 rounded transition-all duration-300 flex flex-col h-full bg-white duration-700 opacity-100 translate-y-0">
-<div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded mb-6 text-primary">
-<span class="material-symbols-outlined text-[28px]">build</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Dépannage PC &amp; Mac</h3>
-<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Résolution rapide des pannes logicielles, plantages système et erreurs mystérieuses de Windows ou macOS.</p>
-</div>
-<!-- Card 3 -->
-<div class="service-card border border-cool-gray p-8 rounded transition-all duration-300 flex flex-col h-full bg-white duration-700 opacity-100 translate-y-0">
-<div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded mb-6 text-primary">
-<span class="material-symbols-outlined text-[28px]">security</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Sécurité &amp; Virus</h3>
-<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Nettoyage complet des logiciels malveillants et sécurisation de vos données personnelles.</p>
-</div>
-<!-- Card 4 -->
-<div class="service-card border border-cool-gray p-8 rounded transition-all duration-300 flex flex-col h-full bg-white duration-700 opacity-100 translate-y-0">
-<div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded mb-6 text-primary">
-<span class="material-symbols-outlined text-[28px]">speed</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Optimisation</h3>
-<p class="font-body-md text-body-md text-on-surface-variant flex-grow">J'accélère votre ordinateur lent grâce au nettoyage système et à l'optimisation des performances.</p>
-</div>
-<!-- Card 5 -->
-<div class="service-card border border-cool-gray p-8 rounded transition-all duration-300 flex flex-col h-full bg-white duration-700 opacity-100 translate-y-0">
-<div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded mb-6 text-primary">
-<span class="material-symbols-outlined text-[28px]">router</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Wi-Fi &amp; Réseau</h3>
-<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Éliminez les zones mortes et sécurisez votre réseau domestique pour une connexion stable partout.</p>
-</div>
-<!-- Card 6 -->
-<div class="service-card border border-cool-gray p-8 rounded transition-all duration-300 flex flex-col h-full bg-white duration-700 opacity-100 translate-y-0">
-<div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded mb-6 text-primary">
-<span class="material-symbols-outlined text-[28px]">devices</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Maison Intelligente</h3>
-<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Installation et configuration de vos nouveaux appareils, tablettes et systèmes domotiques.</p>
+<div class="p-6 border-l-2 border-outline-variant">
+<div class="font-etiquette-mono text-primary mb-4">04</div>
+<h4 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase">Transparence</h4>
+<p class="text-on-surface-variant text-corps-md">Prix fixes et devis honnêtes avant chaque travail.</p>
 </div>
 </div>
 </div>
 </section>
-<!-- Why Choose Us -->
-<section class="py-section-padding bg-surface-container-low border-y border-outline-variant" id="pourquoi">
-<div class="container mx-auto px-gutter max-w-container-max transition-all duration-700 opacity-100 translate-y-0">
-<div class="text-center mb-16">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-4 transition-all duration-700 opacity-100 translate-y-0">Pourquoi me choisir</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Plus qu'un simple service technique, je vous offre une tranquillité d'esprit grâce à un accompagnement personnalisé.</p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
-<div class="flex gap-4 group">
-<div class="text-tech-green shrink-0">
-<span class="material-symbols-outlined text-[40px]">location_on</span>
+<!-- À Propos Section -->
+<section class="py-24 px-marge-mobile md:px-marge-bureau border-t border-outline-variant bg-surface-dim" id="propos">
+<div class="max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative group">
+<div class="absolute -inset-2 border border-primary/20 transition-all group-hover:inset-0"></div>
+<img alt="Notre atelier technique" class="w-full grayscale hover:grayscale-0 transition-all duration-700 h-[500px] object-cover" data-alt="A clean, professional technical workbench for high-end computer repair. The workspace is meticulously organized with high-precision tools like screwdrivers, a multimeter, and a soldering station. The scene is illuminated by focused cool-toned lighting, highlighting the metallic textures of the electronics. The background is a dark, sophisticated workspace atmosphere reflecting professional technical excellence." src="https://lh3.googleusercontent.com/aida/AP1WRLsP7hgupzQGNsAB7_ICIGDds4xc2ZjvnNcIMLV1ZfgJKE3WP0s4sATHVrFLeSxcd9u1XXslTMySrEJzjMJhCd9h9dJxb_Cb0VGOjAurhIfY_SN1SK0-W35JSw7ANtS6ic7EmSKRjOIy60XAkUDmtWhLGHJ3OLm25ToNXVHzmTCyWEuLGizt3zTh-gcW2UNjFVPd9aAQ3454ItmWfsJQSI8c3JfSeTo2j3UkdGoPiy547dkZDJl8pnES4kVj">
 </div>
 <div>
-<h4 class="font-headline-md text-[18px] text-primary mb-2">Service local</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">Un expert de votre communauté qui se déplace directement à votre porte.</p>
-</div>
-</div>
-<div class="flex gap-4 group">
-<div class="text-tech-green shrink-0">
-<span class="material-symbols-outlined text-[40px]">bolt</span>
-</div>
-<div>
-<h4 class="font-headline-md text-[18px] text-primary mb-2">Aide rapide</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">Temps de réponse minimal pour que vous ne restiez pas déconnecté longtemps.</p>
-</div>
-</div>
-<div class="flex gap-4 group">
-<div class="text-tech-green shrink-0">
-<span class="material-symbols-outlined text-[40px]">verified</span>
-</div>
-<div>
-<h4 class="font-headline-md text-[18px] text-primary mb-2">Conseils honnêtes</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">Pas de jargon inutile. Je vous conseille ce dont vous avez réellement besoin.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- About Section -->
-<section class="py-section-padding bg-surface-white overflow-hidden" id="propos">
-<div class="container mx-auto px-gutter max-w-container-max transition-all duration-700 opacity-100 translate-y-0">
-<div class="flex flex-col lg:flex-row items-center gap-16">
-<div class="lg:w-1/2 relative">
-<div class="relative z-10">
-<img alt="L'expert à l'œuvre" class="rounded shadow-2xl w-full h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK4lqPYgC_x0Z5pA4xvzFctVCk9tdfT3T5DxPJpjYOZaS9zj-jmJNFtjxGUu8KozrR_X5g4H3fNh0EnROhk14bLY_3-wp_eIaou-fRsmlgKdSBuglimgVpE-Je4W05NRTswViAWeaHb_Btnqq0WnWlsdzLWU_VqvtiGsyFvkfspXiHxu32brMvU_St4S2H8itYL_TH3LEbsZKkXWyr0OVU3XALFgf1KwFN53DAEm3DrL3sQezT1oXmdncfgypjiXftqJzt7qWXX2Bt">
-</div>
-<div class="absolute -bottom-6 -right-6 w-48 h-48 bg-primary-container/10 rounded -z-0"></div>
-</div>
-<div class="lg:w-1/2">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-6 transition-all duration-700 opacity-100 translate-y-0">À propos de La Chèvre du Net</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-                    J'ai fondé La Chèvre du Net sur le principe que l'informatique doit être au service de l'humain et non l'inverse. Mon objectif est de fournir un service IT local d'exception.
-                </p>
-<p class="font-body-md text-body-md text-on-surface-variant mb-8">
-                    Je crois fermement que la confiance est le pilier de toute relation de service. En tant qu'expert local, je m'engage à offrir une transparence totale, des prix justes et une rigueur technique, tout en conservant la proximité d'un voisin serviable.
-                </p>
-<div class="grid grid-cols-2 gap-8 border-t border-outline-variant pt-8">
-<div>
-<span class="font-headline-md text-[32px] text-tech-green">100%</span>
-<p class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Service Local</p>
-</div>
-<div>
-<span class="font-headline-md text-[32px] text-tech-green">Expert</span>
-<p class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Certifié &amp; Humain</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Contact & Service Area -->
-<section class="py-section-padding bg-surface-container" id="contact">
-<div class="container mx-auto px-gutter max-w-container-max transition-all duration-700 opacity-100 translate-y-0">
-<div class="bg-surface-white rounded shadow-sm border border-cool-gray overflow-hidden">
-<div class="flex flex-col lg:flex-row">
-<!-- Form Area -->
-<div class="p-8 md:p-12 lg:w-3/5 border-b lg:border-b-0 lg:border-r border-cool-gray">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-4 transition-all duration-700 opacity-100 translate-y-0">Contactez-moi</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mb-12">Remplissez le formulaire ci-dessous et je vous contacterai sous peu pour fixer un rendez-vous.</p>
-<form class="space-y-6 transition-all duration-700 opacity-100 translate-y-0" onsubmit="event.preventDefault(); alert('Merci! Votre demande a été reçue.');">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="space-y-2">
-<label class="font-label-md text-[12px] uppercase text-primary block">Nom complet</label>
-<input class="w-full px-4 py-3 rounded border border-cool-gray focus:border-primary focus:ring-1 focus:ring-tech-green outline-none" placeholder="Jean Tremblay" required="" type="text">
-</div>
-<div class="space-y-2">
-<label class="font-label-md text-[12px] uppercase text-primary block">Courriel</label>
-<input class="w-full px-4 py-3 rounded border border-cool-gray focus:border-primary focus:ring-1 focus:ring-tech-green outline-none" placeholder="jean@exemple.com" required="" type="email">
-</div>
-</div>
-<div class="space-y-2">
-<label class="font-label-md text-[12px] uppercase text-primary block">Téléphone</label>
-<input class="w-full px-4 py-3 rounded border border-cool-gray focus:border-primary focus:ring-1 focus:ring-tech-green outline-none" placeholder="(514) 555-0000" required="" type="tel">
-</div>
-<div class="space-y-2">
-<label class="font-label-md text-[12px] uppercase text-primary block">Description du problème</label>
-<textarea class="w-full px-4 py-3 rounded border border-cool-gray focus:border-primary focus:ring-1 focus:ring-tech-green outline-none resize-none" placeholder="Expliquez-moi brièvement votre souci technique..." rows="4"></textarea>
-</div>
-<button class="w-full bg-primary text-on-primary font-label-md text-label-md py-4 rounded hover:bg-primary-container transition-all shadow-md active:scale-[0.98]" type="submit">
-                            Envoyer la demande
-                        </button>
-</form>
-</div>
-<!-- Info Area -->
-<div class="p-8 md:p-12 lg:w-2/5 bg-primary-container text-white">
-<h3 class="font-headline-md text-headline-md text-secondary-container mb-6">Zone de service</h3>
-<p class="font-body-md text-body-md text-on-primary-container mb-8">
-                        Je me déplace directement à votre domicile dans les secteurs suivants :
+<span class="font-etiquette-mono text-primary uppercase tracking-widest mb-6 block">Notre Identité</span>
+<h2 class="font-titre-h2 text-titre-h2 text-primary mb-8 uppercase">Une approche humaine de la technologie</h2>
+<div class="space-y-6 text-on-surface-variant font-corps-lg">
+<p class="">
+                        Chez La Chèvre du Net, nous croyons que la technologie doit être au service de l'humain, et non l'inverse. Fondé par un passionné de matériel, notre atelier s'est bâti une réputation de fiabilité et de précision.
                     </p>
-<div class="space-y-4 mb-12">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-tech-green">check_circle</span>
-<span class="font-body-md">Grand Montréal</span>
+<p class="">
+                        Que ce soit pour un ordinateur qui refuse de démarrer, une connexion internet capricieuse ou des fichiers précieux à récupérer, nous traitons chaque appareil avec le même soin que s'il s'agissait du nôtre. 
+                    </p>
+<p class="">
+                        Notre mission est simple : résoudre vos problèmes techniques pour que vous puissiez vous concentrer sur ce qui compte vraiment pour vous.
+                    </p>
 </div>
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-tech-green">check_circle</span>
-<span class="font-body-md">Rive-Sud</span>
-</div>
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-tech-green">check_circle</span>
-<span class="font-body-md">Laval &amp; Rive-Nord</span>
+<div class="mt-12 flex items-center gap-6">
+<div class="h-px flex-grow bg-outline-variant"></div>
+<span class="font-titre-h3 italic opacity-60">L'équipe technique</span>
 </div>
 </div>
-<div class="rounded overflow-hidden h-64 grayscale hover:grayscale-0 transition-all duration-500 border border-on-primary-container/20">
-<img alt="Carte de service" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1vNWGW0yWXsm_Rf4msPS0OeTksYBz_Gpr36H1M1zKLJuL1IJ6xlpSVVUqSr8Y3yWyVkSvGZMiyO9xp4_oSgCMDW-cBxkhsv-IE60AAmo9kVo63wbzoJQERYA3PDfALY6soxDKfcAxSxXeH1MDK6b5-L3wA3BwkmjZSeeqliGTfz_mgRmJjRDol0JrxjWdh27BXrU2-bqNQMZavFVT6e4wkGvBZFrccv7blmps-fCECIsyTNhZ2ButzIshN1Vr9BxLVHVa6R-kPXPy">
 </div>
-<div class="mt-8 pt-8 border-t border-on-primary-container/20">
-<p class="font-label-md text-label-md mb-2 text-secondary-container">COORDONNÉES</p>
-<p class="font-body-md">info@chevredunet.ca</p>
-<p class="font-body-md">(514) 555-0123</p>
+</section>
+<!-- Contact Section -->
+<section class="py-24 px-marge-mobile md:px-marge-bureau bg-surface-container-lowest" id="contact">
+<div class="max-w-max-width mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-titre-h2 text-titre-h2 text-primary mb-4 uppercase">Contactez-nous</h2>
+<p class="text-on-surface-variant font-corps-lg max-w-2xl mx-auto">Prêt à régler vos problèmes techniques ? Envoyez-nous un message ou appelez-nous directement.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gouttiere">
+<div class="lg:col-span-1 space-y-8">
+<div class="p-8 border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">explore</span>
+<h5 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase">Zone de Service</h5>
+<p class="text-on-surface-variant">Montréal, Rive-Sud (Longueuil, Brossard, Saint-Lambert, etc.)</p>
+</div>
+<div class="p-8 border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">call</span>
+<h5 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase">Téléphone</h5>
+<p class="text-on-surface-variant">(514) 555-0123</p>
+</div>
+<div class="p-8 border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">mail</span>
+<h5 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase">Courriel</h5>
+<p class="text-on-surface-variant">bonjour@lachevredunet.ca</p>
 </div>
 </div>
+<div class="lg:col-span-2 p-10 bg-surface-container border border-outline-variant">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-etiquette-mono text-etiquette-mono text-on-surface-variant uppercase">Nom complet</label>
+<input class="input-precision p-4 text-corps-md" placeholder="Ex: Jean Tremblay" type="text">
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-etiquette-mono text-etiquette-mono text-on-surface-variant uppercase">Courriel</label>
+<input class="input-precision p-4 text-corps-md" placeholder="jean@exemple.com" type="email">
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-etiquette-mono text-etiquette-mono text-on-surface-variant uppercase">Sujet du problème</label>
+<select class="input-precision p-4 text-corps-md">
+<option>Sélectionnez une catégorie</option>
+<option>Réparation Ordinateur</option>
+<option>Problème Réseau/Wi-Fi</option>
+<option>Récupération de données</option>
+<option>Autre demande</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-etiquette-mono text-etiquette-mono text-on-surface-variant uppercase">Détails</label>
+<textarea class="input-precision p-4 text-corps-md" placeholder="Décrivez brièvement votre besoin..." rows="4"></textarea>
+</div>
+<button class="w-full py-5 bg-primary text-background font-titre-h2 text-corps-md font-bold uppercase hover:bg-secondary transition-all active:scale-[0.98]" type="submit">Envoyer la demande</button>
+</form>
 </div>
 </div>
 </div>
 </section>
 <!-- Footer -->
-<footer class="bg-primary text-white py-16 px-gutter border-t border-outline-variant">
-<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+<footer class="bg-surface-container-lowest border-t border-outline-variant text-on-surface py-12 px-marge-mobile md:px-marge-bureau">
+<div class="max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-3 gap-gouttiere">
 <div class="space-y-4">
-<div class="flex items-center gap-3">
-<img alt="Logo" class="h-8 w-auto invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3MVPPq9j2R3--8Gc11mmXyuNsIiv-rhXICf9MyenNexN-r_xizRXMMLI6deNVRcGctz3pOhvtuUWs4Mf0gsV1kuHJAarePDjiAWYIC8lcCfthTTdlRBkYQJ5DiTH98KRr7L4EKO20sDEsHpTUvvc9SFm5qc4ERBoplcfrJSd2KQmHN4CizPLT9c-NkZqKyT9FpGKjrKiafYFugCK7FGeuccm_6kJFvhPrk4shNCWSxq1nqjscJjybC6nQN9H9IZR2oFAi0iB4SnMSQqc">
-<span class="font-headline-md text-headline-md font-bold text-white">La Chèvre du Net</span>
+<h3 class="font-titre-h3 text-titre-h3 font-bold text-primary">La Chèvre du Net</h3>
+<p class="text-on-surface-variant font-corps-md max-w-xs">Le spécialiste local en réparation et soutien informatique à Montréal.</p>
 </div>
-<p class="font-body-md text-on-primary-container/80 max-w-xs">
-                © 2024 La Chèvre du Net. Expertise informatique locale et humaine au service de votre quotidien.
-            </p>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-3">
+<h6 class="font-etiquette-mono text-primary uppercase text-xs font-bold mb-4">Expertises</h6>
+<ul class="text-on-surface-variant space-y-2 font-corps-md">
+<li class=""><a class="hover:text-primary transition-colors" href="#">Réparation PC</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#">Support Réseau</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#">Récupération de Données</a></li>
+</ul>
 </div>
-<div class="flex flex-wrap gap-x-16 gap-y-8">
-<div class="flex flex-col gap-4">
-<span class="font-label-md text-label-md uppercase text-secondary-fixed">Navigation</span>
-<a class="font-body-md hover:text-secondary-fixed transition-all" href="#services">Services</a>
-<a class="font-body-md hover:text-secondary-fixed transition-all" href="#pourquoi">Pourquoi moi?</a>
-<a class="font-body-md hover:text-secondary-fixed transition-all" href="#propos">À propos</a>
-</div>
-<div class="flex flex-col gap-4">
-<span class="font-label-md text-label-md uppercase text-secondary-fixed">Support</span>
-<a class="font-body-md hover:text-secondary-fixed transition-all" href="#contact">Contact</a>
-<a class="font-body-md hover:text-secondary-fixed transition-all" href="#">Urgence</a>
+<div class="space-y-3">
+<h6 class="font-etiquette-mono text-primary uppercase text-xs font-bold mb-4">Secteurs</h6>
+<ul class="text-on-surface-variant space-y-2 font-corps-md">
+<li class=""><a class="hover:text-primary transition-colors" href="#">Montréal</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#">Rive-Sud</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#">Laval (Sur demande)</a></li>
+</ul>
 </div>
 </div>
-<div class="flex gap-4">
-<a class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-secondary-container hover:text-on-secondary-fixed transition-all" href="#">
+<div class="flex flex-col md:items-end justify-between">
+<div class="flex gap-4 mb-8">
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:border-primary transition-colors" href="#">
 <span class="material-symbols-outlined">share</span>
 </a>
-<a class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-secondary-container hover:text-on-secondary-fixed transition-all" href="mailto:info@chevredunet.ca">
-<span class="material-symbols-outlined">mail</span>
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:border-primary transition-colors" href="#">
+<span class="material-symbols-outlined">thumb_up</span>
 </a>
+</div>
+<div class="text-on-surface-variant font-corps-md md:text-right">
+<p class="">© 2024 La Chèvre du Net. Tous droits réservés.</p>
+<a class="text-xs hover:text-primary underline mt-2 block" href="#">Avis Légal</a>
+</div>
 </div>
 </div>
 </footer>
-<!-- Scripts -->
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // Smooth scroll
+        // Smooth scroll for anchors
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const headerOffset = 80;
-                    const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-                }
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
-
-        // Intersection Observer for fade-in animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-8');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.service-card, h2, form, section > div').forEach(el => {
-            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
-            observer.observe(el);
-        });
-    });
-</script>
+    </script>
 
 
 </body></html>
