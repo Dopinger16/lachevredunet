@@ -11,6 +11,7 @@
         theme: {
           extend: {
             "colors": {
+                    "accent-warm": "#E7CCA0",
                     "on-primary-fixed-variant": "#454747",
                     "surface-container-highest": "#353534",
                     "surface-bright": "#3a3939",
@@ -112,11 +113,11 @@
         .watermark-bg {
             position: absolute;
             top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80%;
-            max-width: 600px;
-            opacity: 0.05;
+            right: 4rem;
+            transform: translateY(-50%);
+            width: 45%;
+            max-width: 650px;
+            opacity: 0.025;
             pointer-events: none;
             z-index: 0;
         }
@@ -126,7 +127,7 @@
             transition: border-color 0.3s ease;
         }
         .service-card:hover {
-            border-color: #404040;
+            border-color: #E7CCA0;
         }
         .input-precision {
             background: #1A1A1A;
@@ -135,7 +136,7 @@
         }
         .input-precision:focus {
             outline: none;
-            border-color: #F9F9F9;
+            border-color: #E7CCA0;
         }
     </style>
 </head>
@@ -148,10 +149,10 @@
 <span class="font-titre-h2 text-titre-h3 font-bold text-primary tracking-tight md:block hidden">La Chèvre du Net</span>
 </div>
 <div class="hidden md:flex gap-8 items-center">
-<a class="font-corps-md text-corps-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#services">Services</a>
-<a class="font-corps-md text-corps-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#propos">À Propos</a>
-<a class="font-corps-md text-corps-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#contact">Contact</a>
-<a class="ml-4 px-6 py-2.5 bg-primary text-background font-titre-h3 text-[14px] font-bold hover:opacity-90 active:scale-95 transition-all" href="#contact">Prendre RDV</a>
+<a class="font-corps-md text-corps-md text-on-surface-variant font-medium hover:text-accent-warm transition-colors duration-200" href="#services">Services</a>
+<a class="font-corps-md text-corps-md text-on-surface-variant font-medium hover:text-accent-warm transition-colors duration-200" href="#propos">À Propos</a>
+<a class="font-corps-md text-corps-md text-on-surface-variant font-medium hover:text-accent-warm transition-colors duration-200" href="#contact">Contact</a>
+<a class="ml-4 px-6 py-2.5 bg-primary text-background font-titre-h3 text-[14px] font-bold hover:bg-accent-warm active:scale-95 transition-all" href="#contact">Prendre RDV</a>
 </div>
 <button class="md:hidden text-primary">
 <span class="material-symbols-outlined">menu</span>
@@ -160,22 +161,27 @@
 </nav>
 <!-- Hero Section -->
 <header class="relative min-h-screen flex items-center pt-20 overflow-hidden px-marge-mobile md:px-marge-bureau">
-<img alt="Logo filigrane" class="watermark-bg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHO-pCqsecExu1Ah_x-1AxfAkXbD_W0eh-LuaS8Xl6NZLhx_o5BpzYovbTNSL893fTV0wiihcKhGBQo7KPn-twk0KcEwvgYIw9ByFrg8eL72nVm8pA-Mz0gqTPjHrO7TQndoqJd-kNyIh_g_wN432U-XlM4x1SViq2uk29ZC6QFdvtArYHDyh8Fr8mf-0PutuB-f5j1jWppInZoEVIGhpUkgFRwgkeI9lJEE4L8uLxVMrmBzLHgzTf5czZyiU_RWu-uSKXURFEVvQA" style="filter: brightness(0) invert(1); opacity: 0.08; width: 50%; max-width: 600px; right: 0px; top: 10%; transform: none; left: auto;">
+<img 
+  alt="Logo filigrane" 
+  class="watermark-bg grayscale" 
+  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU7umFVr-8X3cw9Y6byHEcz7t_hjes5ZLNka5z3vN9LagHmauUZcXhJ0Fby8S8Mk1FgdrGC_HS7KwV65gEdUmYbxvS7cWR1UJqSt4Qlj7y9qeJm_IZC7IEjUFqoUmz5aszSbglyAiQgrYwy4ArTE2WnLQPvuX_Qi6f4LFKfeEgZsFjsyLonVYnGWOrzKUya0MVf8P4-NPIeWT1RchBOSzDbNk_XG4OHh_VwLMaypsNXrIX3HH5LmS17YHlOLJeqSJWEa7GfnS10mMA" 
+  style="filter: brightness(0) invert(1);"
+>
 <div class="max-w-max-width mx-auto w-full relative z-10 py-24 text-center md:text-left">
 <div class="max-w-4xl">
-<span class="font-etiquette-mono text-etiquette-mono text-primary border border-outline-variant px-3 py-1 mb-8 inline-block uppercase tracking-widest">Atelier Technique Spécialisé</span>
+<span class="font-etiquette-mono text-etiquette-mono text-accent-warm border border-accent-warm/30 px-3 py-1 mb-8 inline-block uppercase tracking-widest">Atelier Technique Spécialisé</span>
 <h1 class="font-titre-h1-mobile md:font-titre-h1 md:text-titre-h1 text-primary mb-8 uppercase">SOUTIEN TECHNIQUE LOCAL À DOMICILE ET EN ATELIER</h1>
 <p class="font-corps-lg text-corps-lg text-on-surface-variant mb-12 max-w-2xl">
                     Nous remettons votre matériel sur pied avec précision et clarté. Profitez d'une expertise humaine pour vos besoins en informatique, réseaux et récupération de données, sans le jargon complexe.
                 </p>
 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-<a class="px-10 py-5 bg-primary text-background font-titre-h2 text-corps-md font-bold uppercase tracking-wide hover:bg-secondary transition-colors text-center" href="#contact">Demander une visite</a>
-<a class="px-10 py-5 border border-outline-variant text-primary font-titre-h2 text-corps-md font-bold uppercase tracking-wide hover:border-primary transition-colors text-center" href="#services">Nos services</a>
+<a class="px-10 py-5 bg-primary text-background font-titre-h2 text-corps-md font-bold uppercase tracking-wide hover:bg-accent-warm transition-colors text-center" href="#contact">Demander une visite</a>
+<a class="px-10 py-5 border border-outline-variant text-primary font-titre-h2 text-corps-md font-bold uppercase tracking-wide hover:border-accent-warm hover:text-accent-warm transition-colors text-center" href="#services">Nos services</a>
 </div>
 </div>
 </div>
 <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
-<span class="material-symbols-outlined text-4xl">keyboard_double_arrow_down</span>
+<span class="material-symbols-outlined text-4xl text-accent-warm">keyboard_double_arrow_down</span>
 </div>
 </header>
 <!-- Services Section -->
@@ -183,28 +189,28 @@
 <div class="max-w-max-width mx-auto">
 <div class="mb-20">
 <h2 class="font-titre-h2 text-titre-h2 text-primary mb-4 uppercase">Nos Expertises</h2>
-<div class="w-20 h-1 bg-primary"></div>
+<div class="w-20 h-1 bg-accent-warm"></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gouttiere">
 <!-- Service à Domicile -->
 <div class="service-card p-10 flex flex-col justify-between">
 <div>
-<div class="mb-8 text-primary opacity-60">
+<div class="mb-8 text-accent-warm opacity-80">
 <span class="material-symbols-outlined text-6xl" style="font-variation-settings: 'wght' 200;">home_repair_service</span>
 </div>
 <h3 class="font-titre-h3 text-titre-h3 text-primary mb-6 uppercase tracking-tight">SERVICE À DOMICILE</h3>
 <p class="text-on-surface-variant font-corps-md mb-8">Nous nous déplaçons pour configurer votre environnement numérique là où il est utilisé.</p>
 <ul class="space-y-4">
 <li class="flex items-center gap-4 border-b border-surface-container-high pb-4">
-<span class="material-symbols-outlined text-primary text-xl">wifi_tethering</span>
+<span class="material-symbols-outlined text-accent-warm text-xl">wifi_tethering</span>
 <span class="font-corps-md">Optimisation Wi-Fi &amp; Réseautique</span>
 </li>
 <li class="flex items-center gap-4 border-b border-surface-container-high pb-4">
-<span class="material-symbols-outlined text-primary text-xl">settings_input_component</span>
+<span class="material-symbols-outlined text-accent-warm text-xl">settings_input_component</span>
 <span class="font-corps-md">Installation de périphériques &amp; Domotique</span>
 </li>
 <li class="flex items-center gap-4 border-b border-surface-container-high pb-4">
-<span class="material-symbols-outlined text-primary text-xl">security</span>
+<span class="material-symbols-outlined text-accent-warm text-xl">security</span>
 <span class="font-corps-md">Configuration de sécurité à domicile</span>
 </li>
 </ul>
@@ -213,22 +219,22 @@
 <!-- Réparation en Atelier -->
 <div class="service-card p-10 flex flex-col justify-between">
 <div>
-<div class="mb-8 text-primary opacity-60">
+<div class="mb-8 text-accent-warm opacity-80">
 <span class="material-symbols-outlined text-6xl" style="font-variation-settings: 'wght' 200;">precision_manufacturing</span>
 </div>
 <h3 class="font-titre-h3 text-titre-h3 text-primary mb-6 uppercase tracking-tight">RÉPARATION EN ATELIER</h3>
 <p class="text-on-surface-variant font-corps-md mb-8">Un diagnostic méticuleux et des réparations durables pour vos appareils informatiques.</p>
 <ul class="space-y-4">
 <li class="flex items-center gap-4 border-b border-surface-container-high pb-4">
-<span class="material-symbols-outlined text-primary text-xl">laptop_mac</span>
+<span class="material-symbols-outlined text-accent-warm text-xl">laptop_mac</span>
 <span class="font-corps-md">Réparation PC &amp; Laptops (Hardware/Software)</span>
 </li>
 <li class="flex items-center gap-4 border-b border-surface-container-high pb-4">
-<span class="material-symbols-outlined text-primary text-xl">database</span>
+<span class="material-symbols-outlined text-accent-warm text-xl">database</span>
 <span class="font-corps-md">Récupération de données perdues</span>
 </li>
 <li class="flex items-center gap-4 border-b border-surface-container-high pb-4">
-<span class="material-symbols-outlined text-primary text-xl">cleaning_services</span>
+<span class="material-symbols-outlined text-accent-warm text-xl">cleaning_services</span>
 <span class="font-corps-md">Nettoyage complet &amp; suppression de virus</span>
 </li>
 </ul>
@@ -241,24 +247,24 @@
 <section class="py-24 px-marge-mobile md:px-marge-bureau bg-surface">
 <div class="max-w-max-width mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-gouttiere">
-<div class="p-6 border-l-2 border-outline-variant">
-<div class="font-etiquette-mono text-primary mb-4">01</div>
-<h4 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase">Service Local</h4>
+<div class="p-6 border-l-2 border-accent-warm/30 hover:border-accent-warm transition-colors group">
+<div class="font-etiquette-mono text-accent-warm mb-4">01</div>
+<h4 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase group-hover:text-primary transition-colors">Service Local</h4>
 <p class="text-on-surface-variant text-corps-md">Proche de vous à Montréal et sur la Rive-Sud.</p>
 </div>
-<div class="p-6 border-l-2 border-outline-variant">
-<div class="font-etiquette-mono text-primary mb-4">02</div>
-<h4 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase">Réponse Rapide</h4>
+<div class="p-6 border-l-2 border-accent-warm/30 hover:border-accent-warm transition-colors group">
+<div class="font-etiquette-mono text-accent-warm mb-4">02</div>
+<h4 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase group-hover:text-primary transition-colors">Réponse Rapide</h4>
 <p class="text-on-surface-variant text-corps-md">Intervention efficace pour minimiser vos temps d'arrêt.</p>
 </div>
-<div class="p-6 border-l-2 border-outline-variant">
-<div class="font-etiquette-mono text-primary mb-4">03</div>
-<h4 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase">Simplicité</h4>
+<div class="p-6 border-l-2 border-accent-warm/30 hover:border-accent-warm transition-colors group">
+<div class="font-etiquette-mono text-accent-warm mb-4">03</div>
+<h4 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase group-hover:text-primary transition-colors">Simplicité</h4>
 <p class="text-on-surface-variant text-corps-md">Des explications claires, sans langage technique complexe.</p>
 </div>
-<div class="p-6 border-l-2 border-outline-variant">
-<div class="font-etiquette-mono text-primary mb-4">04</div>
-<h4 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase">Transparence</h4>
+<div class="p-6 border-l-2 border-accent-warm/30 hover:border-accent-warm transition-colors group">
+<div class="font-etiquette-mono text-accent-warm mb-4">04</div>
+<h4 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase group-hover:text-primary transition-colors">Transparence</h4>
 <p class="text-on-surface-variant text-corps-md">Prix fixes et devis honnêtes avant chaque travail.</p>
 </div>
 </div>
@@ -268,11 +274,11 @@
 <section class="py-24 px-marge-mobile md:px-marge-bureau border-t border-outline-variant bg-surface-dim" id="propos">
 <div class="max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 <div class="relative group">
-<div class="absolute -inset-2 border border-primary/20 transition-all group-hover:inset-0"></div>
+<div class="absolute -inset-2 border border-accent-warm/20 transition-all group-hover:inset-0 group-hover:border-accent-warm/40"></div>
 <img alt="Notre atelier technique" class="w-full grayscale hover:grayscale-0 transition-all duration-700 h-[500px] object-cover" data-alt="A clean, professional technical workbench for high-end computer repair. The workspace is meticulously organized with high-precision tools like screwdrivers, a multimeter, and a soldering station. The scene is illuminated by focused cool-toned lighting, highlighting the metallic textures of the electronics. The background is a dark, sophisticated workspace atmosphere reflecting professional technical excellence." src="https://lh3.googleusercontent.com/aida/AP1WRLsP7hgupzQGNsAB7_ICIGDds4xc2ZjvnNcIMLV1ZfgJKE3WP0s4sATHVrFLeSxcd9u1XXslTMySrEJzjMJhCd9h9dJxb_Cb0VGOjAurhIfY_SN1SK0-W35JSw7ANtS6ic7EmSKRjOIy60XAkUDmtWhLGHJ3OLm25ToNXVHzmTCyWEuLGizt3zTh-gcW2UNjFVPd9aAQ3454ItmWfsJQSI8c3JfSeTo2j3UkdGoPiy547dkZDJl8pnES4kVj">
 </div>
 <div>
-<span class="font-etiquette-mono text-primary uppercase tracking-widest mb-6 block">Notre Identité</span>
+<span class="font-etiquette-mono text-accent-warm uppercase tracking-widest mb-6 block">Notre Identité</span>
 <h2 class="font-titre-h2 text-titre-h2 text-primary mb-8 uppercase">Une approche humaine de la technologie</h2>
 <div class="space-y-6 text-on-surface-variant font-corps-lg">
 <p class="">
@@ -286,8 +292,8 @@
                     </p>
 </div>
 <div class="mt-12 flex items-center gap-6">
-<div class="h-px flex-grow bg-outline-variant"></div>
-<span class="font-titre-h3 italic opacity-60">L'équipe technique</span>
+<div class="h-px flex-grow bg-accent-warm/20"></div>
+<span class="font-titre-h3 italic opacity-60 text-accent-warm">L'équipe technique</span>
 </div>
 </div>
 </div>
@@ -297,22 +303,23 @@
 <div class="max-w-max-width mx-auto">
 <div class="text-center mb-20">
 <h2 class="font-titre-h2 text-titre-h2 text-primary mb-4 uppercase">Contactez-nous</h2>
+<div class="w-12 h-1 bg-accent-warm mx-auto mb-6"></div>
 <p class="text-on-surface-variant font-corps-lg max-w-2xl mx-auto">Prêt à régler vos problèmes techniques ? Envoyez-nous un message ou appelez-nous directement.</p>
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-gouttiere">
 <div class="lg:col-span-1 space-y-8">
-<div class="p-8 border border-outline-variant">
-<span class="material-symbols-outlined text-primary text-3xl mb-4">explore</span>
+<div class="p-8 border border-outline-variant hover:border-accent-warm/40 transition-colors">
+<span class="material-symbols-outlined text-accent-warm text-3xl mb-4">explore</span>
 <h5 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase">Zone de Service</h5>
 <p class="text-on-surface-variant">Montréal, Rive-Sud (Longueuil, Brossard, Saint-Lambert, etc.)</p>
 </div>
-<div class="p-8 border border-outline-variant">
-<span class="material-symbols-outlined text-primary text-3xl mb-4">call</span>
+<div class="p-8 border border-outline-variant hover:border-accent-warm/40 transition-colors">
+<span class="material-symbols-outlined text-accent-warm text-3xl mb-4">call</span>
 <h5 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase">Téléphone</h5>
-<p class="text-on-surface-variant">(514) 555-0123</p>
+<p class="text-on-surface-variant font-bold">(514) 555-0123</p>
 </div>
-<div class="p-8 border border-outline-variant">
-<span class="material-symbols-outlined text-primary text-3xl mb-4">mail</span>
+<div class="p-8 border border-outline-variant hover:border-accent-warm/40 transition-colors">
+<span class="material-symbols-outlined text-accent-warm text-3xl mb-4">mail</span>
 <h5 class="font-titre-h3 text-corps-lg font-bold mb-2 uppercase">Courriel</h5>
 <p class="text-on-surface-variant">bonjour@lachevredunet.ca</p>
 </div>
@@ -321,16 +328,16 @@
 <form class="space-y-6">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="flex flex-col gap-2">
-<label class="font-etiquette-mono text-etiquette-mono text-on-surface-variant uppercase">Nom complet</label>
+<label class="font-etiquette-mono text-etiquette-mono text-accent-warm/80 uppercase">Nom complet</label>
 <input class="input-precision p-4 text-corps-md" placeholder="Ex: Jean Tremblay" type="text">
 </div>
 <div class="flex flex-col gap-2">
-<label class="font-etiquette-mono text-etiquette-mono text-on-surface-variant uppercase">Courriel</label>
+<label class="font-etiquette-mono text-etiquette-mono text-accent-warm/80 uppercase">Courriel</label>
 <input class="input-precision p-4 text-corps-md" placeholder="jean@exemple.com" type="email">
 </div>
 </div>
 <div class="flex flex-col gap-2">
-<label class="font-etiquette-mono text-etiquette-mono text-on-surface-variant uppercase">Sujet du problème</label>
+<label class="font-etiquette-mono text-etiquette-mono text-accent-warm/80 uppercase">Sujet du problème</label>
 <select class="input-precision p-4 text-corps-md">
 <option>Sélectionnez une catégorie</option>
 <option>Réparation Ordinateur</option>
@@ -340,10 +347,10 @@
 </select>
 </div>
 <div class="flex flex-col gap-2">
-<label class="font-etiquette-mono text-etiquette-mono text-on-surface-variant uppercase">Détails</label>
+<label class="font-etiquette-mono text-etiquette-mono text-accent-warm/80 uppercase">Détails</label>
 <textarea class="input-precision p-4 text-corps-md" placeholder="Décrivez brièvement votre besoin..." rows="4"></textarea>
 </div>
-<button class="w-full py-5 bg-primary text-background font-titre-h2 text-corps-md font-bold uppercase hover:bg-secondary transition-all active:scale-[0.98]" type="submit">Envoyer la demande</button>
+<button class="w-full py-5 bg-primary text-background font-titre-h2 text-corps-md font-bold uppercase hover:bg-accent-warm transition-all active:scale-[0.98]" type="submit">Envoyer la demande</button>
 </form>
 </div>
 </div>
@@ -358,34 +365,34 @@
 </div>
 <div class="grid grid-cols-2 gap-8">
 <div class="space-y-3">
-<h6 class="font-etiquette-mono text-primary uppercase text-xs font-bold mb-4">Expertises</h6>
+<h6 class="font-etiquette-mono text-accent-warm uppercase text-xs font-bold mb-4">Expertises</h6>
 <ul class="text-on-surface-variant space-y-2 font-corps-md">
-<li class=""><a class="hover:text-primary transition-colors" href="#">Réparation PC</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#">Support Réseau</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#">Récupération de Données</a></li>
+<li class=""><a class="hover:text-accent-warm transition-colors" href="#">Réparation PC</a></li>
+<li class=""><a class="hover:text-accent-warm transition-colors" href="#">Support Réseau</a></li>
+<li class=""><a class="hover:text-accent-warm transition-colors" href="#">Récupération de Données</a></li>
 </ul>
 </div>
 <div class="space-y-3">
-<h6 class="font-etiquette-mono text-primary uppercase text-xs font-bold mb-4">Secteurs</h6>
+<h6 class="font-etiquette-mono text-accent-warm uppercase text-xs font-bold mb-4">Secteurs</h6>
 <ul class="text-on-surface-variant space-y-2 font-corps-md">
-<li class=""><a class="hover:text-primary transition-colors" href="#">Montréal</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#">Rive-Sud</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#">Laval (Sur demande)</a></li>
+<li class=""><a class="hover:text-accent-warm transition-colors" href="#">Montréal</a></li>
+<li class=""><a class="hover:text-accent-warm transition-colors" href="#">Rive-Sud</a></li>
+<li class=""><a class="hover:text-accent-warm transition-colors" href="#">Laval (Sur demande)</a></li>
 </ul>
 </div>
 </div>
 <div class="flex flex-col md:items-end justify-between">
 <div class="flex gap-4 mb-8">
-<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:border-primary transition-colors" href="#">
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:border-accent-warm hover:text-accent-warm transition-colors" href="#">
 <span class="material-symbols-outlined">share</span>
 </a>
-<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:border-primary transition-colors" href="#">
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:border-accent-warm hover:text-accent-warm transition-colors" href="#">
 <span class="material-symbols-outlined">thumb_up</span>
 </a>
 </div>
 <div class="text-on-surface-variant font-corps-md md:text-right">
-<p class="">© 2024 La Chèvre du Net. Tous droits réservés.</p>
-<a class="text-xs hover:text-primary underline mt-2 block" href="#">Avis Légal</a>
+<p class="">© 2024 <span class="text-accent-warm/60">La Chèvre du Net</span>. Tous droits réservés.</p>
+<a class="text-xs hover:text-accent-warm underline mt-2 block" href="#">Avis Légal</a>
 </div>
 </div>
 </div>
